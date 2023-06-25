@@ -22,7 +22,7 @@ module.exports = {
     port: 3000,
   },
   entry: {
-    main: "./js/index.ts",
+    main: "./js/index.js",
   },
   output: {
     filename: `./js/${filename("js")}`,
@@ -51,11 +51,11 @@ module.exports = {
   devtool: isProd ? false : "source-map",
   module: {
     rules: [
-      {
-        test: /\.[tj]s$/,
-        use: "ts-loader",
-        exclude: /node_modules/,
-      },
+      //{
+      //test: /\.[tj]s$/,
+      //use: "ts-loader",
+      //exclude: /node_modules/,
+      //},
       {
         test: /\.js$/,
         exclude: /node_modules/,

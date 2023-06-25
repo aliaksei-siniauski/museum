@@ -3,7 +3,7 @@
 }
 .logo-svg {
   &:hover {
-    cursor: pointer;
+    @extend %cursor;
     .logo-path {
       fill: $accent-color;
     }

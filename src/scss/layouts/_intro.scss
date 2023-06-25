@@ -1,0 +1,29 @@
+.intro {
+  background: $bg-color;
+  padding: 0.5rem 0 2rem;
+}
+.intro__container {
+  @extend %flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2.5rem 0;
+  color: $white;
+  font-family: $ff-second;
+}
+
+.intro__title {
+  max-width: 248px;
+  width: 100%;
+}
+.intro__subtitle {
+  font-size: 1.6rem;
+}

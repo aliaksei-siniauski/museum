@@ -1,0 +1,54 @@
+.slider__wrapper {
+  padding: 5rem 0 0;
+}
+.slides__container {
+  width: 380px;
+  overflow: hidden;
+}
+.slide {
+  width: 380px;
+  height: 285px;
+  display: none;
+  &--first {
+    display: block;
+  }
+}
+
+.slider-paginations {
+  min-width: 240px;
+  min-height: 40px;
+  width: 100%;
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-space-between;
+  padding: 2rem 0 0;
+}
+
+.slide-number {
+  color: $white;
+  font-size: 1.6rem;
+  font-weight: $fw-regular;
+}
+.slider-dots {
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-center;
+
+  gap: 0 1rem;
+}
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: $white;
+  transition: background-color 0.6s ease;
+  @extend %cursor;
+  &--active {
+    background-color: $hover-color;
+  }
+}
+.slider-arrows {
+  @extend %flex;
+  @extend %al-items-center;
+  @extend %js-content-center;
+  gap: 1.5rem;
+}

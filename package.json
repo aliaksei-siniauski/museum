@@ -1,6 +1,6 @@
 {
   "name": "museum",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack --mode development",

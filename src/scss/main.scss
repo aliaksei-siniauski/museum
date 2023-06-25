@@ -1,12 +1,16 @@
 @import "./abstracts/extend";
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 @import "./base/base";
 @import "./base/reset";
+@import "./base/typography";
 
 @import "./layouts/header";
+@import "./layouts/intro";
 
 @import "./components/logo";
 @import "./components/burger";
+@import "./components/slider";
 
 @import "./utilities/container";
