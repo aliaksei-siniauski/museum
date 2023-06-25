@@ -1,12 +1,7 @@
 body {
-  // min-width: 320px;
-  // min-height: 100vh;
-  // @extend %flex;
-  // @extend %flex-column;
-  // @extend %js-content-space-between;
-  color: $white;
+  min-width: 320px;
+  min-height: 100vh;
   font-family: $ff-second;
   font-size: $fs-main;
   overflow: hidden;
-  background: $bg-dark;
 }

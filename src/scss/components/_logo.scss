@@ -1,0 +1,15 @@
+.logo-path {
+  transition: all 1s ease-in-out;
+}
+.logo-svg {
+  &:hover {
+    cursor: pointer;
+    .logo-path {
+      fill: $accent-color;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+}

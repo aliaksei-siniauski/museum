@@ -38,7 +38,7 @@ module.exports = {
       },
     }),
     new CleanWebpackPlugin(),
-    /* new CopyPlugin({
+    new CopyPlugin({
       patterns: [
         {
           from: path.resolve(__dirname, "src/assets"),
@@ -46,7 +46,7 @@ module.exports = {
         },
       ],
     }),
-     */ new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin(),
   ],
   devtool: isProd ? false : "source-map",
   module: {
