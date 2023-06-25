@@ -1,11 +1,12 @@
-@import "./abstracts/_extend.scss";
-@import "./abstracts/_variables.scss";
+@import "./abstracts/extend";
+@import "./abstracts/variables";
 
-@import "./base/_base.scss";
-@import "./base/_reset.scss";
+@import "./base/base";
+@import "./base/reset";
 
-@import "./layouts/_header.scss";
+@import "./layouts/header";
 
 @import "./components/logo";
+@import "./components/burger";
 
-@import "./utilities/_container.scss";
+@import "./utilities/container";
