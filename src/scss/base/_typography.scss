@@ -1,0 +1,9 @@
+h1 {
+  @include font($size: $fs-bold, $height: 3.1rem, $weight: $fw-regular);
+}
+
+h2 {
+  @include font($size: $fs-second, $height: 9rem, $weight: $fw-regular);
+  font-family: $ff-second;
+  text-transform: uppercase;
+}
