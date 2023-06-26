@@ -3,7 +3,16 @@ h1 {
 }
 
 h2 {
-  @include font($size: $fs-second, $height: 9rem, $weight: $fw-regular);
+  @include font($size: $fs-bold, $height: 4rem, $weight: $fw-regular);
   font-family: $ff-second;
   text-transform: uppercase;
+  color: $primary-color;
+}
+
+h3 {
+  @include font($size: $fs-third, $height: auto, $weight: $fw-regular);
+  font-family: $ff-second;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: $primary-color;
 }

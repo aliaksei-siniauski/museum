@@ -1,0 +1,24 @@
+.places__wrapper {
+  @extend %flex;
+  flex-direction: column;
+  gap: 4rem 0;
+}
+
+.place-item {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 2.5rem 0;
+
+  .section-title {
+    &::after {
+      max-width: 150px;
+    }
+  }
+}
+
+.place__info {
+  @extend %flex;
+  flex-direction: column;
+  gap: 1rem 0;
+}

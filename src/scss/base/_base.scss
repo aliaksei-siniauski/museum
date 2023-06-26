@@ -3,5 +3,19 @@ body {
   min-height: 100vh;
   font-family: $ff-main;
   font-size: $fs-main;
-  overflow: hidden;
+  //overflow: hidden;
+}
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  &::after {
+    content: "";
+    display: inline-block;
+    max-width: 360px;
+    height: 3px;
+    width: 100%;
+    background: $active-color;
+  }
 }
