@@ -1,0 +1,86 @@
+.explore {
+  background: $dark;
+}
+
+.explore__title {
+  color: $white;
+}
+
+.img-comp__wrapper {
+  padding: 4rem 0 0;
+  overflow: hidden;
+}
+
+.img-comp {
+  max-width: 380px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-comp__before,
+.img-comp__after {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.img-comp__before {
+  position: absolute;
+  top: 0;
+  width: 61%;
+}
+.img-comp__conntainer {
+  position: relative;
+  display: flex;
+}
+
+.img-comp__slider-range {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: none;
+  outline: none;
+  appearance: none;
+  &::-moz-range-thumb {
+    height: 368px;
+    width: 2px;
+    border: 0;
+    background: none;
+    -moz-appearance: none;
+    cursor: col-resize;
+  }
+}
+
+.img-comp__slider-track {
+  position: absolute;
+  width: 2px;
+  height: 368px;
+  background: transparent;
+  left: 61%;
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 174px;
+    background: $white;
+  }
+  &::after {
+    bottom: 0;
+  }
+  &::before {
+    top: 0;
+  }
+}
+.img-comp__slider-thumber {
+  width: 20px;
+  height: 20px;
+  border: 2px solid $white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
